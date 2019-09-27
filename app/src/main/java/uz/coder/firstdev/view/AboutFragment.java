@@ -1,6 +1,7 @@
 package uz.coder.firstdev.view;
 
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,10 +16,16 @@ import uz.coder.firstdev.R;
  * A simple {@link Fragment} subclass.
  */
 public class AboutFragment extends Fragment {
+    private Context context;
 
 
     public AboutFragment() {
         // Required empty public constructor
+    }
+
+    public AboutFragment(Context context) {
+        this.context =context;
+
     }
 
 

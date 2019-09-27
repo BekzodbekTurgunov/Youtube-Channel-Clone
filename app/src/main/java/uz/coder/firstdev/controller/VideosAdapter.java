@@ -34,8 +34,8 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
             holder.title.setText(videos.get(position).getTitle());
-            holder.countView.setText(videos.get(position).getVideoCount()+"  views");
-            holder.uploadTime.setText(videos.get(position).getUploadTime());// write code;
+            holder.countView.setText(videos.get(position).getviews()+"  views");
+            holder.uploadTime.setText(videos.get(position).getUploadTime()+ "  week");// write code;
 
         String url = videos.get(position).getVideoUrl();
         if (url !=null && !url.isEmpty()){

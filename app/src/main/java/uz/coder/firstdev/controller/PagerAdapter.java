@@ -20,11 +20,11 @@ public class PagerAdapter extends FragmentPagerAdapter {
     ArrayList<Fragment> fragments = new ArrayList<>();
     public PagerAdapter(@NonNull FragmentManager fm, Context context) {
         super(fm);
-        fragments.add(new HomeFragment());
-        fragments.add(new VideosFragment());
-        fragments.add(new PlaylistsFragment());
+        fragments.add(new HomeFragment(context));
+        fragments.add(new VideosFragment(context));
+        fragments.add(new PlaylistsFragment(context));
         fragments.add(new ChannelsFragment(context));
-        fragments.add(new AboutFragment());
+        fragments.add(new AboutFragment(context));
 
     }
 

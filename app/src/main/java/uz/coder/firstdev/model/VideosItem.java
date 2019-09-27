@@ -4,14 +4,14 @@ public class VideosItem {
     private String videoUrl;
     private String title;
     private int uploadTime;
-    private int videoCount;
+    private int views;
 
 
-    public VideosItem(String videoUrl, String title, int uploadTime, int videoCount) {
+    public VideosItem(String videoUrl, String title, int uploadTime, int views) {
         this.videoUrl = videoUrl;
         this.title = title;
         this.uploadTime = uploadTime;
-        this.videoCount = videoCount;
+        this.views = views;
     }
 
     public VideosItem() {
@@ -41,11 +41,11 @@ public class VideosItem {
         this.uploadTime = uploadTime;
     }
 
-    public int getVideoCount() {
-        return videoCount;
+    public int getviews() {
+        return views;
     }
 
-    public void setVideoCount(int videoCount) {
-        this.videoCount = videoCount;
+    public void setviews(int views) {
+        this.views = views;
     }
 }
