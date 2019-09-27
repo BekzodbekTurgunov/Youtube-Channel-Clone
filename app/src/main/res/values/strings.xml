@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">firstDev</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutchannel">Description
+
+        Hey guys, my name is Bekzodbek and i have created this " BIR KAMI TOLMAGAN DUNYO " project to document
+        my learning process by turning the stuff I learn into tutorials and blog posts.
+        I try to make my videos clear and easy to understand, but I want to point out that
+        i am NOT an experienced developer, but rather a beginner that tries to learn by teaching.
+        I only make a video about a topic, after i feel like I completely understand it. I try to not
+        teach any outdated or wrong information and I research extensively, before I record a video. I also
+        have a website where I write regular blog posts, but they are more about productivity
+        and other stuff around programming and working in general. On this page you will also find
+        the code to most of my videos, so i would be happy !!!
+</string>
+</resources>
