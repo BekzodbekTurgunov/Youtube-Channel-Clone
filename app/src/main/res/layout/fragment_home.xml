@@ -1,82 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.HomeFragment">
 
 
-        <ImageView
-            android:id="@+id/chanellIco"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="5dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/bb" />
 
-    <RelativeLayout
-        android:background="#ccc"
-        android:layout_below="@id/chanellIco"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.cardview.widget.CardView
-            app:cardElevation="3dp"
-            app:cardCornerRadius="3dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:id="@+id/head"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_image"
-                android:layout_width="96dp"
-                android:layout_alignParentLeft="true"
-                android:layout_height="96dp"
-                android:src="@drawable/profile"
-                app:civ_border_width="2dp"
-                app:civ_border_color="#FF000000"/>
-
-                <TextView
-                    android:id="@+id/channelName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_toRightOf="@id/profile_image"
-                    android:text="Bir Kami Tolmagan Dunyo"
-                    android:textAlignment="center"
-                    android:textSize="28dp"
-                    app:fontFamily="@font/alfa_slab_one"
-                    tools:ignore="NotSibling" />
-                <TextView
-                    android:id="@+id/upload"
-                    android:layout_below="@id/profile_image"
-                    android:layout_marginTop="5dp"
-                    android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:text="Uploads"
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/home_video_rcview"
-                    android:layout_below="@id/upload"
-                    tools:listitem="@layout/home_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-            </RelativeLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-    </RelativeLayout>
+    <include
+        layout="@layout/test_layout"
+        />
 
 
 
-</RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
